@@ -1,0 +1,13 @@
+{
+    "name": "iapps/wusic",
+    "description": "Wusic Web, contains admin and web",
+    "authors": [
+        {
+            "name": "erik",
+            "email": "erik_sugiarto@hotmail.com"
+        }
+    ],
+    "require": {
+        "codeception/codeception": "*"
+    }
+}

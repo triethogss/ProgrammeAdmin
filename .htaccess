@@ -1,0 +1,27 @@
+# Disable the server signature
+ServerSignature Off
+
+# Prevent access to .htaccess
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+# Prevent directory listing
+<IfModule mod_autoindex.c>
+	Options All -Indexes
+</IfModule>
+
+# Block access to multiple file types
+<FilesMatch "(\.(htaccess|htpasswd|bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)|~)$">
+  Order allow,deny
+  Deny from all
+  Satisfy All
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymlinks
+	RewriteEngine On
+	RewriteCond $1 !^(index\.php|assets|tests|temp_images|robots\.txt)
+	RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
