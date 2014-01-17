@@ -27,7 +27,7 @@
   <li class="active"><a href="#profile" data-toggle="tab">Endorsed</a></li>   
 </ul>
 <div class="tab-content">
- <!-- Tab Request -->  
+<!-- Tab Request -->  
 <!-- end tab request -->
 <!-- Start tab endorsed -->
 <div class="tab-pane active" id="profile">	
@@ -35,7 +35,8 @@
 		<div class="header-background">
 			<div class="row">
 				<div class="col-md-2"><input class="form-control" placeholder="Search"></div>
-				<div class="col-md-1"><a href="<?php echo site_url('programme/addNewProgramme');?>"><input type='button' class='btn btn-primary' value='Add a New Program' ></a></div>
+				<div class="col-md-2"><a href="<?php echo site_url('programme/addNewProgramme');?>"><input type='button' class='btn btn-primary' value='Add a New Program' ></a></div>
+				<div class="col-md-2"><a href="<?php echo site_url('programme/addnewevent');?>"><input type='button' class='btn btn-primary' value='Add an Event' ></a></div>
 			</div>
 			<div class="row">
 				<!-- By date -->
@@ -83,9 +84,9 @@
 					<!-- Name of programme -->
 					<div style="float:left;"><a class="link" href='<?php echo site_url('programme/addProgrammeForRegistration');?>'>Learn-to-play Badminton</a> </div>
 					<!-- Icon Delete --> 
-					<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-del-programe"><span class="glyphicon glyphicon-trash"></span></button></div>
+					<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-del-endorsed-prog"><span class="glyphicon glyphicon-trash"></span></button></div>
 					<!-- Icon Edit -->
-					<div style="float:right;width:50px;"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button></div>
+					<div style="float:right;width:50px;"><a class="link" href='<?php echo site_url('programme/addNewProgramme');?>'><button type="button" class="btn btn-default btn-edit-endorsed-prog"><span class="glyphicon glyphicon-pencil"></span></button></a></div>
 				</div>
 				<div style="width:100%;height:20px;">
 					<!-- date endorsed -->
@@ -100,9 +101,9 @@
 					<!-- Name of programme -->
 					<div style="float:left;"><a class="link" href='<?php echo site_url('programme/addProgrammeForRegistration');?>'>Aerobics</a> </div>
 					<!-- Icon Delete --> 
-					<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-del-programe"><span class="glyphicon glyphicon-trash"></span></button></div>
+					<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-del-endorsed-prog"><span class="glyphicon glyphicon-trash"></span></button></div>
 					<!-- Icon Edit -->
-					<div style="float:right;width:50px;"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button></div>
+					<div style="float:right;width:50px;"><a class="link" href='<?php echo site_url('programme/addNewProgramme');?>'><button type="button" class="btn btn-default btn-edit-endorsed-prog"><span class="glyphicon glyphicon-pencil"></span></button></a></div>
 				</div>
 				<div style="width:100%;height:20px;">
 					<!-- date endorsed -->
@@ -117,3 +118,22 @@
 </div>
 <!-- End endorsed -->
 </div>
+<!-- Dialog Confirm when delete endorsed programme -->
+<!-- Modal -->
+<div class="modal fade" data-backdrop="static"  id="dialog-confirm-del-endorsed-prog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        Do you want delete this programme ?
+      </div>
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-primary" id="delete-endorsed-prog-yes">Yes</button>
+        <button type="button" class="btn btn-primary" id="delete-endorsed-prog-no"data-dismiss="modal">No</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

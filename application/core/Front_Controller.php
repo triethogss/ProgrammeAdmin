@@ -33,6 +33,7 @@ class Front_Controller extends Base_Controller
 		// Add general JS assets
 		// Assets::add_js('jquery.min.js');
 		// Assets::add_js('modernizr.js');
+		Assets::add_js('jquery-1.9.1.min.js');
 		Assets::add_js('libs/bootstrap.js');
 		Assets::add_js('libs/handlebars-v1.1.2.min.js');
 		Assets::add_js('libs/bootstrap-paginator.min.js');

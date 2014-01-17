@@ -86,9 +86,9 @@
 			<!-- Icon Delete --> 
 			<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-delete-available-prog"><span class="glyphicon glyphicon-trash"></span></button></div>
 			<!-- Icon Copy --> 
-			<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-copy-available-prog"><span class="glyphicon glyphicon-file"></span></button></div>
+			<div style="float:right;width:50px;"><a href='<?php echo site_url('programme/addProgrammeForRegistration');?>'><button type="button" class="btn btn-default btn-copy-available-prog"><span class="glyphicon glyphicon-file"></span></button></a></div>
 			<!-- Icon Edit -->
-			<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-edit-available-prog"><span class="glyphicon glyphicon-pencil"></span></button></div>
+			<div style="float:right;width:50px;"><a href='<?php echo site_url('programme/addNewProgramme');?>'><button type="button" class="btn btn-default btn-edit-available-prog"><span class="glyphicon glyphicon-pencil"></span></button></a></div>
 		</div>
 		<div style="width:100%;height:25px;">
 			<!-- date submmit -->
@@ -106,9 +106,9 @@
 			<!-- Icon Delete --> 
 			<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-delete-available-prog"><span class="glyphicon glyphicon-trash"></span></button></div>
 			<!-- Icon Copy --> 
-			<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-copy-available-prog"><span class="glyphicon glyphicon-file"></span></button></div>
+			<div style="float:right;width:50px;"><a href='<?php echo site_url('programme/addProgrammeForRegistration');?>'><button type="button" class="btn btn-default btn-copy-available-prog"><span class="glyphicon glyphicon-file"></span></button></a></div>
 			<!-- Icon Edit -->
-			<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-edit-available-prog"><span class="glyphicon glyphicon-pencil"></span></button></div>
+			<div style="float:right;width:50px;"><a href='<?php echo site_url('programme/addNewProgramme');?>'><button type="button" class="btn btn-default btn-edit-available-prog"><span class="glyphicon glyphicon-pencil"></span></button></a></div>
 		</div>
 		<div style="width:100%;height:25px;">
 			<!-- date submmit -->
@@ -126,9 +126,9 @@
 			<!-- Icon Delete --> 
 			<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-delete-available-prog"><span class="glyphicon glyphicon-trash"></span></button></div>
 			<!-- Icon Copy --> 
-			<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-copy-available-prog"><span class="glyphicon glyphicon-file"></span></button></div>
+			<div style="float:right;width:50px;"><a href='<?php echo site_url('programme/addProgrammeForRegistration');?>'><button type="button" class="btn btn-default btn-copy-available-prog"><span class="glyphicon glyphicon-file"></span></button></a></div>
 			<!-- Icon Edit -->
-			<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-edit-available-prog"><span class="glyphicon glyphicon-pencil"></span></button></div>
+			<div style="float:right;width:50px;"><a href='<?php echo site_url('programme/addNewProgramme');?>'><button type="button" class="btn btn-default btn-edit-available-prog"><span class="glyphicon glyphicon-pencil"></span></button></a></div>
 		</div>
 		<div style="width:100%;height:25px;">
 			<!-- date submmit -->
@@ -146,7 +146,7 @@
 			<!-- Icon Delete --> 
 			<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-delete-available-prog"><span class="glyphicon glyphicon-trash"></span></button></div>
 			<!-- Icon Copy --> 
-			<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-copy-available-prog"><span class="glyphicon glyphicon-file"></span></button></div>
+			<div style="float:right;width:50px;"><a href='<?php echo site_url('programme/addProgrammeForRegistration');?>'><button type="button" class="btn btn-default btn-copy-available-prog"><span class="glyphicon glyphicon-file"></span></button></a></div>
 			<!-- Icon Edit -->
 			<div style="float:right;width:50px;"><button type="button" class="btn btn-default btn-edit-available-prog"><span class="glyphicon glyphicon-pencil"></span></button></div>
 		</div>
@@ -182,7 +182,7 @@
 <!-- end div contain -->
 <!-- Dialog Confirm -->
 <!-- Modal -->
-<div class="modal fade" id="dialog-confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" data-backdrop="static"  id="dialog-confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -193,9 +193,8 @@
         Do you want delete this programme ?
       </div>
       <div class="modal-footer">
-      	<button type="button" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-        
+      	<button type="button" class="btn btn-primary" id="delete-available-prog-yes">Yes</button>
+        <button type="button" class="btn btn-primary" id="delete-available-prog-no"data-dismiss="modal">No</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

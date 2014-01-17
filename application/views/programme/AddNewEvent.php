@@ -1,4 +1,4 @@
-<!-- <h2>Add new programme</h2>  -->
+<!-- Add New Event -->
 <style type="text/css">
 .form-control
 {
@@ -8,13 +8,8 @@
 {
 	background-color: #cccccc;
 }
-
 	
 </style>
-<div style="border-bottom:2px solid #cccccc;margin-bottom:10px;">
-	<div style="font-size:18px;">PROGRAMME CODE</div>
-	<div>123-Pend</div>
-</div>
 <form class="form-horizontal" role="form">
 	<!-- Name of provider -->
 	<div class="row">
@@ -28,18 +23,18 @@
 	  </div>
 	  <div class="col-md-6">
 	  	<div class="form-group">
-		    <label for="txtProgrammeName" class="col-sm-4 control-label">Name of programme</label>
+		    <label for="txtProgrammeName" class="col-sm-4 control-label">Name of Event</label>
 		    <div class="col-sm-8">
-		      <input type="text" class="form-control" id="txtProgrammeName" placeholder="Name of programme">
+		      <input type="text" class="form-control" id="txtProgrammeName" placeholder="Name of Event">
 		    </div>
 	  	</div>
 	  </div>
 	</div>
-	<!-- Programme name category -->
+	<!-- Event category -->
 	<div class="row">
 		<div class="col-md-6">
 			<div class="form-group">
-			    <label class="col-sm-4 control-label">Programme category</label>
+			    <label class="col-sm-4 control-label">Event category</label>
 			    <div class="col-sm-6">
 					<select class="form-control">					 
 					  	<?php                   
@@ -70,7 +65,7 @@
 		</div>
 		<div class='col-md-6'>
 			<div class="form-group">
-				<label class="col-md-4" id="sport-category">Sport Category Level 1:-</label>
+				<label class="col-md-4" id="sport-category">Sport Category Level 1: -</label>
 	 		 </div>
 		</div> 
 	</div>
@@ -83,24 +78,25 @@
 		</div>
 		<div class='col-md-6'>
 			<div class="form-group">
-				<label class="col-md-4" id="sport-type">Sport Category Level 2:-</label>
+				<label class="col-md-4" id="sport-type">Sport Category Level 2: -</label>
 			</div>
 		</div>
 	</div>	
 	<!-- Sport Category Level 3 -->
 	<div class="row">
-		<div class="col-md-6"></div>
+		<div class="col-md-6">			
+		</div>
 		<div class='col-md-6'>
 			<div class="form-group">
-				<label class="col-md-4" id="sport-type">Sport Category Level 3:-</label>
+				<label class="col-md-4" id="sport-type">Sport Category Level 3: -</label>
 			</div>
 		</div>
-	</div>
+	</div>	
 	<!-- Overall objective of programme -->
 	<div class="row">
 		<div class="col-md-8">
 			<div class="form-group">
-			     <label for="txtObjectiveofProgramme" class="col-md-4 control-label">Overall Objective of Programme</label>
+			     <label for="txtObjectiveofProgramme" class="col-md-4 control-label">Overall Objective of Event</label>
 		   		 <div class="col-md-8">
 		      		<!-- <input type="text" class="form-control" id="txtObjectiveofProgramme" > -->
 		      		<textarea class="form-control" row="4"></textarea>
@@ -108,11 +104,11 @@
 		  	</div>
 	  	</div>
 	</div>
-	<!-- Programme Description -->
+	<!-- Event Description -->
 	<div class="row">
 		<div class="col-md-8">
 			<div class="form-group">
-			     <label for="txtActivityDescription" class="col-md-4 control-label">Programme Description</label>
+			     <label for="txtActivityDescription" class="col-md-4 control-label">Event Description</label>
 		   		 <div class="col-md-8">
 		      		<!-- <input type="text" class="form-control" id="txtActivityDescription" > -->
 		      		<textarea class="form-control" row="4"></textarea>
@@ -120,11 +116,11 @@
 		  	</div>
 	  	</div>
 	</div>
-	<!-- Programme Short Description -->
+	<!-- Event Short Description -->
 	<div class="row">
 		<div class="col-md-8">
 			<div class="form-group">
-			     <label for="txtActivityDescription" class="col-md-4 control-label">Programme  Short Description</label>
+			     <label for="txtActivityDescription" class="col-md-4 control-label">Event  Short Description</label>
 		   		 <div class="col-md-8">
 		      		<input type="text" class="form-control" id="txtActivityDescription" >
 		      		<!-- <textarea class="form-control" row="4"></textarea> -->
@@ -132,11 +128,11 @@
 		  	</div>
 	  	</div>
 	</div>
-	<!-- Programme URL -->
+	<!-- Event URL -->
 	<div class="row">
 		<div class="col-md-6">
 			<div class="form-group">
-			    <label class="col-sm-4 control-label">Programme URL</label>
+			    <label class="col-sm-4 control-label">Event URL</label>
 			    <div class="col-sm-6">
 					<input type="text" class="form-control" >
 			    </div>
@@ -175,27 +171,11 @@
 	<div class="row">
 		<div class="col-md-4">
 			<div class="form-group">
-			     <label for="numberofSesion" class="col-md-8 control-label">Description of each session/league</label>
+			     <label for="numberofSesion" class="col-md-8 control-label">Description of each session</label>
 		   	</div>
 	  	</div>
-	<!--   	<div class="col-md-6">
-	  		<div class="form-group">
-			    <label for="durationofsesion" class="col-md-4 control-label">Duration of each session</label>
-		   		 <div class="col-md-2">
-		      		<input type="number" class="form-control" id="durationofsessionhour" min="0" max="23" >
-		    	</div>		    	
-		    	<div class="col-md-2">
-		      		<input type="number" class="form-control" id="durationofsessionminute" min="0" max="59">
-		    	</div>
-	    	 	<div class="input-group date datetimepicker startdatetimepicker col-md-3" id="duration-of-session">
-	                <input type="text" class="form-control" name="started_at"  readonly="readonly" />
-	                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
-	                </span>
-	            </div>
-		  	</div>
-	  	</div> -->
 	</div>
-	<!-- Description of each sesion/league -->
+	<!-- Description of each sesion -->
 	<div class="row">
 			<div class="col-md-2"></div>	
 			<div class="col-md-6">
@@ -295,10 +275,10 @@
 		<div class="col-md-2"></div>
 		<div class="col-md-6">	
 		  	<label class="col-md-6">
-		  		<input type="radio" name="programme-fee" id="fee-per-pax" checked>Programme Fee Per Pax		  		
+		  		<input type="radio" name="programme-fee" checked>Event Cost Per Pax		  		
 		  	</label>
 		  	<label class="col-md-6">
-		  		<input type="radio" name="programme-fee" id="league-fee">Programme/ League Fee		  		
+		  		<input type="radio" name="programme-fee">Event Cost		  		
 		  	</label>		
 	  	</div>	  	
 	</div>
@@ -401,67 +381,6 @@
 	 		 </div>
 		</div>
 	</div>	
-	<!-- Instructor to student ratio -->		
-	<div class="row">
-		<div class="col-md-6">
-			<div class="form-group">
-			    <label class="col-sm-4 control-label">Instructor to student ratio</label>
-			    <div class="col-sm-2">					
-					<input type="number" class="form-control" id="maximumAge" min="0" value="0">									 
-				</div>
-				<div class="col-sm-2">					
-					<input type="number" class="form-control" id="maximumAge" min="0" value="0">									 
-				</div>			    
-	 		 </div>
-		</div>
-	</div>
-		<!-- National Sports Association (NSA) -->		
-	<div class="row">
-		<div class="col-md-6">
-			<div class="form-group">
-			    <label class="col-sm-4 control-label">National Sports Association</label>
-			    <div class="col-sm-3">
-					<select class="form-control">					 
-					  	<option>Yes</option>
-						<option>No</option>										 
-					</select>
-			    </div>			    
-	 		 </div>
-		</div>
-	</div>
-	<!-- Insurance coverage for Programme -->		
-	<div class="row">
-		<div class="col-md-6">
-			<div class="form-group">
-			    <label class="col-sm-4 control-label">Insurance coverage for Programme</label>
-			    <div class="col-sm-3">					
-					<input type="file" id="exampleInputFile">
-				</div>							    
-	 		</div>
-		</div>
-	</div>	
-	<!-- League plan -->		
-	<div class="row">
-		<div class="col-md-6">
-			<div class="form-group">
-			    <label class="col-sm-4 control-label">League plan (Mandatory for sport league)</label>
-			    <div class="col-sm-3">					
-					<input type="file" id="fileLeaguePlan">
-				</div>							    
-	 		</div>
-		</div>
-	</div>
-	<!-- Risk Management Plan -->		
-	<div class="row">
-		<div class="col-md-6">
-			<div class="form-group">
-			    <label class="col-sm-4 control-label">Risk Management Plan</label>
-			    <div class="col-sm-3">					
-					<input type="file" id="fileRiskManagementPlan">
-				</div>							    
-	 		</div>
-		</div>
-	</div>
 	<!-- Attach Photo -->		
 	<div class="row">
 		<div class="col-md-6">
@@ -473,7 +392,7 @@
 	 		</div>
 		</div>
 	</div>
-	<!-- Contact person for enquiry -->
+		<!-- Contact person for enquiry -->
 	<div class="row">
 	  <div class="col-md-6">
 	  	<div class="form-group">
@@ -534,59 +453,11 @@
 		    </div>
 	  	</div>
 	  </div>
-	</div>
-	<!-- List Activity Leader/Instructor -->
-	<div id="leader-container">
-		<div class='row'>
-			<div class='col-md-6'>
-				<div class='form-group'>
-					<!-- label  List Activity Leader ... -->
-				    <label class='col-md-4 control-label'>List Activity Leader/Instructor</label>
-				    <!-- select activity leader -->
-				    <div class='col-md-6'>
-						<select class='form-control' style='width:100%;' id="select-list-leader">
-						   <?php                   
-	                     		 foreach ($list_leader as $key)
-	                         	 echo "<option>".$key["name"]."</option>";
-                    		?>												 
-						</select>
-				    </div>
-				    <!-- button plus -->
-				    <div class='col-md-1'><button type='button' class='btn btn-success btn-add-leader'><span class='glyphicon glyphicon-plus-sign'></span></button></div>
-				    <!-- button trash -->
-				    <div class='col-md-1'><button type='button' class='btn btn-default del-last-leader'><span class='glyphicon glyphicon-trash'></span></button></div>
-		 		 </div>
-			</div>
-		</div>
-	</div>
-	<!-- Pre-requisite conditions -->
-	<div id="requisite-condition-container">
-		<div class='row'>
-			<div class='col-md-6'>
-				<div class='form-group'>
-					<!-- label  Pre-requisite conditions -->
-				    <label class='col-md-4 control-label'>Pre-requisite conditions</label>
-				    <!-- select conditions -->
-				    <div class='col-md-6'>
-						<select class='form-control' style='width:100%;' id="select-additional-resources">
-						   <?php                   
-	                     		 foreach ($additional_resource as $key)
-	                         	 echo "<option>".$key["name"]."</option>";
-                    		?>															 
-						</select>
-				    </div>
-				    <!-- button plus -->
-				    <div class='col-md-1'><button type='button' class='btn btn-success btn-add-condition'><span class='glyphicon glyphicon-plus-sign'></span></button></div>
-				    <!-- button trash -->
-				    <div class='col-md-1'><button type='button' class='btn btn-default del-last-condition'><span class='glyphicon glyphicon-trash'></span></button></div>
-		 		 </div>
-			</div>
-		</div>
-	</div>
+	</div>	
 	<!-- Additional resource -->
-	<div class="row">
+	<div class="row" style="border-bottom:2px solid #cccccc;margin-bottom:5px;">
 		<div class="form-group">
-			<label class="col-md-3 control-label">Additional resources and/or accessories</label>
+			<label class="col-md-3 control-label">Additional resources and/or merchandises</label>
 			<div class="col-md-6">
 				<!-- Table Additional resource -->
 				<div class="table-responsive">
@@ -616,17 +487,267 @@
 			</div>
 		</div>
 	</div>
-	<div style=" margin-left: auto;margin-right: auto;width: 470px;background-color:#cccccc;">	
-			<label class="col-md-6" >Endorsement Required ?</label>  <label class="col-md-2"><input type="radio" name="endorsement">Yes</label><label class="col-md-2"><input type="radio" name="endorsement">No</label>
-
-			
-	</div> 
-	<div style=" margin-left: auto;    margin-right: auto;    width: 150px;">	
-			
-			<a href="<?php echo site_url('programme/endorsementRequest');?>" ><button type="button" class="btn btn-success">Submit</button></a>
-			<a href="<?php echo site_url('programme/availableForRegistration');?>" ><button type="button" class="btn btn-success">Cancel</button></a>
-	</div> 
+	<!-- ==================================================================================================== -->
+	<div><strong>The following information are populated from facility booking where applicable :</strong></div>
+	<div><strong>Sessions:</strong></div>
+	<!-- table of sessions -->
+	<div class="row" style="border-bottom:2px solid #cccccc;margin-bottom:10px;">
+		<div class="col-md-10">
+			<div class="table-responsive">
+				<table class="table table-bordered" id="table-sessions">
+					<thead>
+			  			<tr>
+			  				<th>Date</th>
+			  				<th>Start time</th>
+			  				<th>End time</th>
+			  				<th>Sub-venue</th>
+			  				<th>Facility booking code</th>
+			  				<th>Revenue centre</th>
+			  				<th>Action</th>
+			  			</tr>
+		  			</thead>
+		  			<tr>
+		  				<td><input type='text' class='form-control tb-ses-row-date'></td>
+		  				<td><input type='text' class='form-control tb-ses-row-start-time'></td>
+		  				<td><input type='text' class='form-control tb-ses-row-end-time'></td>
+		  				<td><input type='text' class='form-control tb-ses-row-sub-venue'></td>
+		  				<td><input type='text' class='form-control tb-ses-row-code'></td>
+		  				<td><input type='text' class='form-control tb-ses-row-revenue'></td>
+		  				<td>			  				
+			  				<div style='width:130px;'>
+						        <a href=''><button type='button' class='btn btn-default btn-edit-session'><span class='glyphicon glyphicon-pencil'></span></button></a>
+								<!-- button delete -->
+							    <button type='button' class='btn btn-default btn-del-last-session'><span class='glyphicon glyphicon-trash'></span></button>		  					
+								<!-- button add -->
+								<button type='button' class='btn btn-success btn-add-session'><span class='glyphicon glyphicon-plus-sign'></span></button>		  					
+		  					 </div>
+		  				</td>
+		  			</tr>
+				</table>
+			</div>
+		</div>
+	</div><!-- end table session -->
+	<!-- ========================================================================================================================================= -->
+	<!-- Event Display Name -->
+	<form class="form-horizontal" role="form">
+		<div class="form-group">
+	 		<label class="col-md-3 control-label">Event Display Name:</label>
+	 		<div class="col-md-3">
+	 			<input type="text" class="form-control"  >
+	 		</div>
+ 		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+				    <label class="col-md-6" style="text-align:right;">Registration Start Date</label>
+		            <div class="input-group date datetimepicker startdatetimepicker col-md-5" id="star_time_registration">
+		                <input type="text" class="form-control" name="started_at"  readonly="readonly" />
+		                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+		                </span>
+		            </div>
+		        </div>
+	    	</div>
+	    	<div class="col-md-4">
+				<div class="form-group">
+				    <label class="col-md-3">End Date</label>
+		            <div class="input-group date datetimepicker startdatetimepicker col-md-7" id="end_time_registration">
+		                <input type="text" class="form-control" name="started_at"  readonly="readonly" />
+		                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+		                </span>
+		            </div>
+		        </div>
+	    	</div>
+  		</div>
+  		<!-- Reminder to be sent to users ... -->
+  		<div class="row">
+  			<div class="col-md-10">
+  				<div class="form-group">
+  					<label class="col-md-6">Reminder to be sent to users who has add this Event to My Favourite</label>
+  					<div class="input-group date datetimepicker startdatetimepicker col-md-3" id="event-reminder">
+		                <input type="text" class="form-control" name="started_at"  readonly="readonly" />
+		                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+		                </span>
+		            </div>
+  				</div>
+  			</div>
+  		</div>
+  		<!-- Minimum class size not met -->
+	    <div class="form-group">
+	    	<label class="col-md-3 control-label">Minimum class size not met:</label>
+	    </div>
+	    <!-- Release of facility -->
+	    <div class="row">
+	    	<div class="form-group">
+		    	<label class="col-md-3 control-label">Release of facility</label>	    	
+		    	<div class="col-md-1">		
+				    <label class="radio-inline">
+				      <input type="radio" name="isendorse">Yes 
+				    </label>	  
+			    </div>
+			    <div class="col-md-1">		    	
+				    <label  class="radio-inline">
+				      <input type="radio" name="isendorse">No
+				    </label>	  	
+			  	</div>
+		  </div>
+	    </div>
+	    <!-- 1st/ 2nd remider  -->
+	 	<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+				    <label class="col-md-6" style="text-align:right;">1st Reminder</label>
+		            <div class="input-group date datetimepicker startdatetimepicker col-md-5" id="first_reminder">
+		                <input type="text" class="form-control" name="started_at" readonly="readonly" />
+		                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+		                </span>
+		            </div>
+		        </div>
+	    	</div>
+	    	<div class="col-md-4">
+				<div class="form-group">
+				    <label class="col-md-3">2nd Reminder</label>
+		            <div class="input-group date datetimepicker startdatetimepicker col-md-7" id="second_reminder">
+		                <input type="text" class="form-control" name="started_at"  readonly="readonly" />
+		                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+		                </span>
+		            </div>
+		        </div>
+	    	</div>
+  		</div>
+	    <!-- To notify  -->
+	    <div class="row">
+	    	<label class="col-md-3 control-label">To notify : </label>
+	    	<div class='col-md-7'>
+	    		<!-- row check me -->
+	    		<div class="row">
+					<label class="col-md-4">
+				      <input type="checkbox"> Provider
+				    </label>  
+				   <!--  <label class="col-md-6">
+				      <input type="checkbox">Activity Leader/Instructor
+				    </label>  -->	
+	    		</div>
+	    		<!-- row CM, ACM, Zone Planning Team -->
+	    		<div class="row">
+					<label class="col-md-2">
+				      <input type="checkbox"> CM
+				    </label>  	
+				    <label class="col-md-2">
+				      <input type="checkbox"> ACM
+				    </label>  
+				    <label class="col-md-6">
+				      <input type="checkbox"> Zone Planning Team
+				    </label>
+	    		</div>
+	    		<!-- row Others -->
+	    		<div class="row">
+					<label class="col-md-2">
+				      <input type="checkbox"> Others
+				    </label>
+				    <div class='col-md-10'>
+				    	<div class="row">	
+					    	<label class='col-md-5'><input type='text' class='form-control input-other' ></label>
+					    	<button type='button' class='btn btn-success btn-add-other'><span class='glyphicon glyphicon-plus-sign'></span></button>
+					    	<button type='button' class='btn btn-default btn-del-last-other'><span class='glyphicon glyphicon-trash'></span></button>				    	
+					    </div>
+					</div>				 
+	    		</div>
+	    	</div>
+	    </div>
+	    <!-- Message -->
+	    <div class="row" style="margin-bottom:10px;">
+	    	<label class="col-md-3 control-label">Message :</label>
+	    	<div class="col-md-6">
+	    		<textarea class="form-control" rows="4">
+	    			Please note, Aerobic Dance Prograame (123 Endorsed) has not meet it's minimum class size!
+	    		</textarea>
+	    	</div>
+	    </div>	   
+	    <!-- Tag Word  -->
+	  	<div class="row">
+	    	<label class="col-md-3 control-label">Tag Word:</label>
+	    	<div class='col-md-9'>
+	    		<div class='row'>
+	    		    <div id='select-tag-word-container'>	
+			 			<label class='col-md-3' id='select-tag-word'>
+			 				<select class='form-control'>
+			 					<option>Declaration 1</option>
+			 					<option>Declaration 2</option>
+			 				</select>
+			 			</label>
+		 			</div>
+		 			<button type='button' class='btn btn-success btn-add-tag-word'><span class='glyphicon glyphicon-plus-sign'></span></button>
+			    	<button type='button' class='btn btn-default btn-del-last-tag-word'><span class='glyphicon glyphicon-trash'></span></button>
+		    	</div>		 
+	 		</div>
+	    </div>		
+	    <!-- Discount Scheme -->
+	    <div class="row">
+	    	<label class="col-md-3 control-label">Discount Scheme:</label>
+	    	<div class='col-md-9'>
+	    		<div class='row'>	
+	    			<div id='select-scheme-container'>
+			 			<label class="col-md-3" id="select-discount-scheme">
+			 				<select class="form-control">
+			 					<option>Item 1</option>
+			 					<option>Item 2</option>
+			 				</select>
+			 			</label>
+			 		</div>
+		 			<button type="button" class="btn btn-success btn-add-scheme"><span class="glyphicon glyphicon-plus-sign"></span></button>
+			    	<button type="button" class="btn btn-default btn-del-last-scheme"><span class="glyphicon glyphicon-trash"></span></button>
+		    	</div>		 
+	 		</div>
+	    </div>	
+	       <!-- checkbox member, non-member, all user -->
+		 <div style="margin:auto;width:620px;background-color:#b0e0e6;">
+		 	<label class="col-md-4">
+		 		<input type="radio" name="user">For Member only 
+		 	</label>
+		 	<label class="col-md-4">
+		 		<input type="radio" name="user">For Non-member only
+		 	</label>
+		 	<label class="col-md-4">
+		 		<input type="radio" name="user">For all users
+		 	</label>
+		 </div>
+	    <!-- checkbox not public and public booking -->
+		 <div style="margin:auto;width:480px;background-color:#b0e0e6;">
+		 	<label class="col-md-6">
+		 		<input type="radio" name="public">Not for Public Booking 
+		 	</label>
+		 	<label class="col-md-6">
+		 		<input type="radio" name="public">Open for public Booking
+		 	</label>
+		 </div>
+		 <!-- To remove from public display .. -->
+		 <div style="margin:auto;width:460px;">			 
+		 	 <label class="col-md-12"> 
+		 		<input type="checkbox" name="group">To remove from public display upon Registration End Date	 	
+		 	</label> 
+		 </div>
+		 <!-- checkbox individual and group -->
+		 <div style="margin:auto;width:480px;">	
+		 	<label class="col-md-6">	 	
+		 		<input type="radio" name="group">For individual registration 
+		 	</label>
+		 	<label class="col-md-6">
+		 		<input type="radio" name="group">For group registration		 	
+		 	</label>
+		 </div>
+		 <!-- button add programme for registration -->
+		<div style="width:320px; margin-left:auto;margin-right:auto;">
+			<a href="<?php echo site_url('programme/availableForRegistration');?>"><button type="button" class="btn btn-primary">Add Event for Registration</button></a>
+			<a href="<?php echo site_url('programme/endorsementendorsed');?>"><button type="button" class="btn btn-primary">Cancel</button></a>
+		</div>
 </form>
+
+
+
+
+
+
+
 <!-- Dialog Confirm when delete session-->
 <!-- Modal -->
 <div class="modal fade" id="dialog-confirm-del-session" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -680,6 +801,26 @@
       <div class="modal-footer">
       	<button type="button" class="btn btn-primary" id="del-resources-yes">Yes</button>
         <button type="button" class="btn btn-primary" id="del-resources-no"data-dismiss="modal">No</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal
+
+<!-- Dialog Confirm when delete other->
+<!-- Modal -->
+<div class="modal fade" data-backdrop="static"  id="dialog-confirm-del-other" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        Do you want to delete ?
+      </div>
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-primary" id="del-other-yes">Yes</button>
+        <button type="button" class="btn btn-primary" id="del-other-no"data-dismiss="modal">No</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

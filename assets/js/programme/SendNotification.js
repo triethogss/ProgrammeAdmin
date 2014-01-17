@@ -12,6 +12,19 @@
 	         $(".check-email").prop('checked', false);
 	    }
     });
+    // check all when all checkbox checked
+ 	$(".check-email").change(function(){
+ 		var checked =	$(".check-email:checked").length;
+ 		var count = $(".check-email").length;
+ 		if(checked==count)
+ 		{
+ 			 $('#checkbox-all-email').prop('checked', true);
+ 		}
+ 		else
+ 		{
+ 			 $('#checkbox-all-email').prop('checked', false);
+ 		}
+ 	});
 
    //select all notification checkbox
    $('#checkbox-all-notification').change(function() {
@@ -26,6 +39,19 @@
 	         $(".check-notification").prop('checked', false);
 	    }
     });
+   // check all when all checkbox checked
+ 	$(".check-notification").change(function(){
+ 		var checked =	$(".check-notification:checked").length;
+ 		var count = $(".check-notification").length;
+ 		if(checked==count)
+ 		{
+ 			 $('#checkbox-all-notification').prop('checked', true);
+ 		}
+ 		else
+ 		{
+ 			 $('#checkbox-all-notification').prop('checked', false);
+ 		}
+ 	});
 
    //select all sms checkbox
    $('#checkbox-all-sms').change(function() {
@@ -40,5 +66,18 @@
 	         $(".check-sms").prop('checked', false);
 	    }
     });
+   // check all when all checkbox checked
+ 	$(".check-sms").change(function(){
+ 		var checked =	$(".check-sms:checked").length;
+ 		var count = $(".check-sms").length;
+ 		if(checked==count)
+ 		{
+ 			 $('#checkbox-all-sms').prop('checked', true);
+ 		}
+ 		else
+ 		{
+ 			 $('#checkbox-all-sms').prop('checked', false);
+ 		}
+ 	});
  
 })(jQuery);

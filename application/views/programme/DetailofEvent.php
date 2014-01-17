@@ -13,19 +13,19 @@
 <div class="row" style="border-bottom:2px solid #cccccc;">
 	<!-- Programme code  -->
 	<div class="col-md-4">
-		<p style="font-size:18px;font-weight:bold;">PROGRAMME CODE</p>
-		<p>123-Pend</p>
+		<p style="font-size:18px;font-weight:bold;">NAME OF EVENT</p>
+		<p>Health Talk</p>
 	</div>
 	<!-- Name of programme -->
 	<div class="col-md-3">
-		<p  style="font-size:18px;font-weight:bold;">NAME OF PROGRAMME</p>
-		<p>Aerobics dance</p>
+		<p  style="font-size:18px;font-weight:bold;">EVENT CODE</p>
+		<p>Heal0214SK002</p>
 	</div>
 	<!-- button group  -->
 	<div class="col-md-5">
 		<div class="btn-group">
 		  <a href="<?php echo site_url('programme/addNewProgramme');?>"><button type="button" class="btn btn-default">Edit</button></a>
-		  <a href="<?php echo site_url('programme/showParticipant');?>"><button type="button" class="btn btn-default">Participant</button></a>
+		  <a href="<?php echo site_url('programme/addParticipantIndividual');?>"><button type="button" class="btn btn-default">Add participant</button></a>
 		  <a href="<?php echo site_url('programme/showAttendance');?>"><button type="button" class="btn btn-default">Attendance</button></a>
 		  <a href="<?php echo site_url('programme/availableForRegistration');?>"><button type="button" class="btn btn-default">Cancelation</button></a>
 		</div>
@@ -46,24 +46,24 @@
 				  			<th>End time</th>
 				  			<th>Sub-venue</th>
 				  			<th>Facility Booking Code</th>
-				  			<th>Revenue Centre</th>
+				  			
 				  		</tr>
 			  		</thead>
 			  		<tr>
-			  			<td>Mon-Feb 11-2014</td>
-			  			<td>8:00PM</td>
-			  			<td>9:00PM</td>
-			  			<td>Sengkong Studio 1</td>
-			  			<td>Fac 123</td>
-			  			<td>SK01</td>
+			  			<td>Sun-Feb 2-2014</td>
+			  			<td>10:00am</td>
+			  			<td>11:00am</td>
+			  			<td>Sengkang Sports Hall</td>
+			  			<td>Fac-126</td>
+			  			
 			   		</tr>
 			   		<tr>
-			  			<td>Mon-Feb 25-2014</td>
-			  			<td>8:00PM</td>
-			  			<td>9:00PM</td>
-			  			<td>Sengkong Studio 1</td>
+			  			<td>Sun-Feb 2-2014</td>
+			  			<td>11:00am</td>
+			  			<td>12:00pm</td>
+			  			<td>Sengkang Sports Hall</td>
 			  			<td>Fac 123</td>
-			  			<td>SK01</td>
+			  			
 			   		</tr>
 				</table>
 			</div>
@@ -75,19 +75,19 @@
 		<div class="col-md-8">
 			<!-- row 1 -->
 			<div class="row">
-				<label class="control-label col-md-3">Programme Period:</label>
-				<div class="col-md-4">11 Feb-25 Feb 2014</div>
+				<label class="control-label col-md-3">Event Period:</label>
+				<div class="col-md-4">2 Feb-2 Feb 2014</div>
 			</div>
 			<!-- row 2 -->
 			<div class="row">
 				<label class="col-md-3">Registration Start Date:</label>
 				<div class="col-md-3">Jan 2, 2014 8:00AM</div>
 				<label class="col-md-2">End date</label>
-				<div class="col-md-3">Jan 31, 2014 6:00PM</div>
+				<div class="col-md-3">Jan 14, 2014 6:00PM</div>
 			</div>
 			<!-- row 3 -->
 			<div class="row">
-				<label class="col-md-3">Activity Description:</label>
+				<label class="col-md-3">Event Description:</label>
 				<div class="col-md-4">Aerobics is...</div>
 			</div>
 
@@ -98,7 +98,7 @@
 	</div>
 	<!-- Target Group -->
 	<div class="row">
-		<label class="col-md-2">Targer Groups</label>
+		<label class="col-md-2">Targer Audience</label>
 		<div class="col-md-4">Adults between age of 24 to 40</div>
 	</div>
 	<!-- Class size -->
@@ -106,8 +106,8 @@
 		<div class="col-md-5">
 			<!-- Class size -->
 			<div class="row">
-				<label class="col-md-6">Class size</label>
-				<div class="col-md-6">20</div>
+				<label class="col-md-6">Event size</label>
+				<div class="col-md-6">1000</div>
 			</div>
 			<!-- Contact Person -->
 			<div class="row">
@@ -150,12 +150,12 @@
 							</thead>
 							<tr>
 								<td>Member</td>
-								<td>$80</td>
+								<td>$5</td>
 								<td></td>
 							</tr>
 							<tr>
 								<td>Non-Member</td>
-								<td>$88</td>
+								<td>$8</td>
 								<td></td>
 							</tr>
 						</table>
@@ -163,31 +163,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- List activity leader -->
+	</div>	
 	<div class="row">
-		<label class="col-md-3">List Activity Leader/Instructror</label>
-		<div class="col-md-2">
-			<div class="table-responsive">
-				<table class="table table-bordered table-striped">
-					<tr>
-						<td>Micheal Tan</td>
-					</tr>
-					<tr>
-						<td>Angel Lim</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<label class="col-md-3">Pre-requisite conditions:</label>
-		<div class="col-md-2">NA</div>
-		<label class="col-md-1">Declaration</label>
-		<div class="col-md-2">General Declaration</div>
-	</div>
-	<div class="row">
-		<label class="col-md-6" >Additonal resources and/ or accessories</label>
+		<label class="col-md-6" >Additonal resources and/ or merchandises</label>
 	</div>
 	<div class="row" style="border-bottom:2px solid #cccccc;margin-bottom:10px;">
 		<div class="col-md-3">
@@ -214,17 +192,17 @@
 
 	<!-- ========================================== -->
 	<div class="row">
-		<label class="col-md-6">This programme is open for all</label>
+		<label class="col-md-6">This event is for all user</label>
 	</div>
 	<div class="row">
-		<label class="col-md-6">This programme is display to public</label>
+		<label class="col-md-6">This event is display to the public</label>
 	</div>
 	<div class="row">
 		<label class="col-md-6">This programme is catered for individual registration only</label>
 	</div>
 	<div class="row">
 		<div class="col-md-1"></div>
-		<div class="col-md-6"><strong>Tag word : </strong>Dance, Aerobic, Female, Age Between</div>
+		<div class="col-md-6"><strong>Tag word : </strong>Health, Talk, Male, Female, Age</div>
 
 	</div>
 	<!-- Discount scheme -->
@@ -234,33 +212,23 @@
 	</div>
 	<!-- Programme Category -->
 	<div class='row'>
-		<label class="col-md-2 title" >Programme Category:</label>
-		<div class="col-md-2">Sports Play</div>
+		<label class="col-md-2 title" >Event Category:</label>
+		<div class="col-md-2">Social Event</div>
 	</div>
 	<!-- Activity  -->
 	<div class="row">
 			<label class="col-md-2 title">Activity:</label>
-			<div class="col-md-2">Aerobics</div>	
+			<div class="col-md-2">Talk</div>	
 			<label class="col-md-2 title">Sport catogery:</label>
-			<div class="col-md-2">Studio Based</div>
+			<div class="col-md-2">Event</div>
 
 	</div>
 	<!-- Sport type -->
 	<div class="row">
 		<div class="col-md-2 title">Activity type:</div>
-		<div class="col-md-2">Fitness and wellness</div>
+		<div class="col-md-2">Event</div>
 		<div class="col-md-2 title">Sport type:</div>
-		<div class="col-md-2">Studio</div>
-
-
-		<!-- <div class="col-md-4"> 
-			<div class="col-md-6">Sport type:</div>
-			<div class="col-md-6">Studio</div>
-		</div>
-		<div class="col-md-4"> 
-			<div class="col-md-6">Activity type:</div>
-			<div class="col-md-6">Fitness and wellness</div>
-		</div> -->
+		<div class="col-md-2">Indoor</div>
 	</div>
 	<!-- Overall objective of Programme -->
 	<div class="row">
@@ -270,78 +238,46 @@
 	<!-- No. of  session -->
 	<div class="row">
 		<label class="col-md-2">No. of session</label>
-		<div class="col-md-2">3</div>
+		<div class="col-md-2">1</div>
 		<label class="col-md-2">Duration of each session</label>
-		<div class="col-md-2">00H:50M</div>
+		<div class="col-md-2">02H:00M</div>
 	</div>
 	<!-- each of session  -->
 	<!-- session 1 -->
 	<div class="row">
 		<label class="col-md-2">Session 1</label>
-		<div class="col-md-2">Start with ....</div>
+		<div class="col-md-2">Health Talk...</div>
 	</div>
-	<!-- session 2 -->
-	<div class="row">
-		<label class="col-md-2">Session 2</label>
-		<div class="col-md-2">Proceed ....</div>
-	</div>
-	<!-- session 3 -->
-	<div class="row">
-		<label class="col-md-2">Session 3</label>
-		<div class="col-md-2">End with ....</div>
-	</div>
+
 	<!-- Venue Requirement -->
 	<div class="row">
-		<label class="col-md-2">Venue Requirement:</label>
+		<label class="col-md-3">Venue Requirement:</label>
 		<div class="col-md-3">Air-conditioned</div>
-		<label class="col-md-2">Minimum number start:</label>
-		<div class="col-md-2">15</div>
+		<label class="col-md-3">Minimum number start:</label>
+		<div class="col-md-2">50</div>
 	</div>
 	<!-- Equipment Requirement -->
 	<div class="row">
-		<label class="col-md-2 ">Equipment Requirement:</label>
-		<div class="col-md-3">Studio with full body mirrors</div>
-		<label class="col-md-2">Minimum age of participants:</label>
+		<label class="col-md-3 ">Equipment Requirement:</label>
+		<div class="col-md-3">Tables and chairs</div>
+		<label class="col-md-3">Minimum age of participants:</label>
 		<div class="col-md-2">24</div>
 	</div>
 	<!-- Cost per Programme/League -->
 	<div class="row">
-		<label class="col-md-2">Cost per Programme/League:</label>
-		<div class="col-md-3">NA</div>
-		<label class="col-md-2">Maximum age of participants:</label>
+		<div class="col-md-3"></div>
+		<div class="col-md-3"></div>
+		<label class="col-md-3">Maximum age of participants:</label>
 		<div class="col-md-2">40</div>
 	</div>
 	<!-- Insurance coverage for Programme  -->
 	<div class="row">
-		<label class="col-md-2">Insurance coverage for Programme:</label>
-		<div class="col-md-3">File...</div>
-		<label class="col-md-2">Participant gender</label>
+		<div class="col-md-3"></div>
+		<div class="col-md-3"></div>
+		<label class="col-md-3">Participant gender</label>
 		<div class="col-md-2">Female</div>
 	</div>
-	<!-- National Sports Association -->
-	<div class="row">
-		<label class="col-md-2">National Sports Association (NSA)</label>
-		<div class="col-md-3">Yes</div>	
-		<label class="col-md-2">Instructor to student ratio</label>
-		<div class="col-md-2">1:20</div>
-	</div>
-	<!-- Risk Management Plan -->
-	<div class="row">
-		<label class="col-md-2">Risk Management Plan:</label>
-		<div class="col-md-3">File name .... </div>
-	</div>
-	<!-- No. allowable on Waiting List -->
-	<div class="row">
-		<label class="col-md-2">No. allowable on Waiting List</label>
-		<div class="col-md-2">5</div>	
-	</div>
-	<!-- No. of respone day for payment -->
-	<div class="row">
-		<label class="col-md-2">No. of respone day for payment:</label>
-		<div class="col-md-1">1</div>
-		<label class="col-md-3">Reminder for payment (no. of day before payment due)</label>
-		<div class="col-md-1">1</div>
-	</div>
+
 	<!-- Minimum class size not met: -->
 	<div class="row">
 		<label class="col-md-3">Minimum class size not met:</label>
@@ -363,10 +299,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- Certificate type -->
-	<div class="row">
-		<div class="col-md-8"><strong>Certificate Type:</strong> Micheal Tan, Ng Eng Soon, CM, ACM</div>
-	</div>
+	
 </div>
 
 

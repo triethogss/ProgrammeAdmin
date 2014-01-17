@@ -70,12 +70,7 @@
                 <li class="divider"></li>
                 <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
               </ul>
-            </li>
-
-
-           
-
-
+            </li>       
           </ul> 
         
             <ul class="nav navbar-nav navbar-right1 navbar-user">
@@ -92,7 +87,7 @@
                         <li><a href="new-booking.html" class="cls-white">Make new booking</a></li>
                         <li><a href="reports.html" class="cls-white">List Refund / Waiver Requests</a></li>
                     </ul>
-                </li>
+            </li>
 
           <li class="submenu"><a href="#" class="submenu_a">Venue Settings</a>
                     <ul>
@@ -136,17 +131,15 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i><b> Programme </b><b class="caret"></b></a>
-              <ul class="dropdown-menu">
-            <li class="submenu"><a href="#" class="submenu_a"></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i><b>Programme</b><b class="caret"></b></a>
+              <ul class="dropdown-menu" style="min-width:220px;">
+                <!-- <li class="submenu"><a href="#" class="submenu_a"></a> -->
                     <ul>
                         <li><a href="<?php echo site_url('programme/endorsementRequest');?>" class="cls-white">Endorsement</a></li>
                         <li><a href="<?php echo site_url('programme/availableForRegistration');?>" class="cls-white">Available for Registration</a></li>
                        
                     </ul>
-                </li>
-
-          
+                <!-- </li>           -->
               </ul>
             </li>
 
